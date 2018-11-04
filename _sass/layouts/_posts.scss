@@ -55,14 +55,19 @@ header {
 /* --- Feature image --- */
 .feature-image {
     padding: 0;
+
     .post-link {
-        color: $feature-image-text-color;
+        color: #000000;//$feature-image-text-color;
     }
     header {
-        color: $feature-image-text-color;
-        background-size: $feature-image-size;
+		-moz-box-shadow:    inset 0 0 10px #555555;
+		-webkit-box-shadow: inset 0 0 10px #555555;
+		box-shadow:         inset 0 0 10px #555555;
+        color: #000000;//$feature-image-text-color;
+        background-size: 100% auto;
+        background-color: #FFFFFF;
         margin-bottom: 0;
-        padding: $padding-large/2.5 $padding-large;
+        padding: $padding-large/5 $padding-medium/2;
         .meta {
             color: rgba($feature-image-text-color, .7);
         }
