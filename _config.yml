@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://ondovb.github.io"
-title: Home # site's title
-description: "A website with blog posts and pages" # used by search engines
+title: Brian Ondov # site's title
+description: "Portfolio" # used by search engines
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -15,7 +15,7 @@ theme_settings:
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <p>Brian Ondov<br>PhD candidate</p>
-  header_text_feature_image: assets/img/banner2.png
+  header_text_feature_image: assets/img/banner.png
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
