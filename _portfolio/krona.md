@@ -8,7 +8,7 @@ feature-img: "assets/img/krona-banner.png"
 thumbnail: "assets/img/krona.png"
 ---
 
-Visualizing metagenomic communities, such as the types bacteria in the human
+Visualizing metagenomic communities, such as the types of bacteria in the human
 microbiome, can be complicated by levels of granularity. For example, you may
 not know a priori whether you should be looking at the species level or genus
 level, or perhaps even higher if you would like to see host DNA or contamination.
