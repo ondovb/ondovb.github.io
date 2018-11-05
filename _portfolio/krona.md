@@ -2,7 +2,6 @@
 layout: post
 title: Krona
 subtitle: Interactive hierarchical exploration
-tags: [A Tag, Test, Lorem, Ipsum]
 excerpt_separator: <!--more-->
 feature-img: "assets/img/krona-banner.png"
 thumbnail: "assets/img/krona.png"
