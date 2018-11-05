@@ -21,6 +21,6 @@ radial zooming technique. Our implementation creates self-contained HTML files,
 with data embedded as XML and the interface JavaScript in the header. These can
 easily be shared or embedded, like this one:
 
-<iframe scrolling="no" style="padding:0;width:100%;height:400px;" src="http://marbl.github.io/Krona/examples/rdp.krona.html?dataset=0&node=571&collapse=true&color=false&depth=8&font=10&key=true"></iframe>
+<iframe scrolling="no" style="padding:0;width:100%;height:400px;" src="https://marbl.github.io/Krona/examples/rdp.krona.html?dataset=0&node=571&collapse=true&color=false&depth=8&font=10&key=true"></iframe>
 
 More at [github.com/marbl/Krona/wiki](https://github.com/marbl/Krona/wiki).
