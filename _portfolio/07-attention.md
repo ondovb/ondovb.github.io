@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 feature-img: "assets/img/attention-banner.png"
 thumbnail: "assets/img/attention.png"
 pubs:
--   pdf: /assets/attention.pdf
+-   pdf: attention.pdf
     type: Manuscript
     authors: Yancy Liao, Jacqueline Nelligan, Brian Ondov, Gina Wong
 badges:
