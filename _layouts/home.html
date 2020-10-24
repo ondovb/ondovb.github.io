@@ -2,38 +2,99 @@
 layout: default
 ---
 
-<div class="home">
-  {% if site.theme_settings.header_text %}
-  <div id="main" class="call-out"
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
-    {{ site.theme_settings.header_text }}
-  </div>
-  {% endif %}
+<div class="home" id="main">
 
+  <br><br><br>
+  <div style="display: inline; margin: 0;">
+    <div style="background-image:url({{ site.portrait }}); " class="portrait" src=""></div>
+  </div>
+<p>
+<div style="text-align: center; margin-top: 15px;-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+width:100%">
+<h3>Brian Ondov</h3>
+</div>
+</p>
+  <p style="width:60%;margin-left:auto;margin-right:auto;">
+    I'm a PhD Candidate in <a href="https://www.cs.umd.edu">Computer Science</a> at the
+    <a href="https://www.umd.edu">University of Maryland</a>, advised by
+    <a href="https://sites.umiacs.umd.edu/elm/">Niklas Elmqvist</a>, and a predoctoral
+    fellow in the <a href="https://genomeinformatics.github.io/people/ondov/">
+    Genome Informatics Section</a> at the National Institutes of Health.
+    My research interests include Natural Language Processing, Computational
+    Biology, and Information Visualization.
+  </p>
+  <p style="width:60%;margin-left:auto;margin-right:auto;">
+    I have worked on highly cited
+    <a href="https://scholar.google.com/citations?user=bPyA99MAAAAJ&hl=en">publications</a>,
+    given talks at top-tier conferences,
+    <!--
+    &mdash;both in Human-Computer Interaction
+    (<a href="http://ieeevis.org/">IEEE VIS</a>) and Computational Biology
+    (<a href="https://www.asm.org/Events/ASM-NGS/Home">ASM-NGS</a>, <a href="https://blog.umd.edu/m3/upcoming-events/">M3</a>)&mdash;
+    -->
+    acted as a peer reviewer for journals like Nature and Bioinformatics, 
+    served as a <a href="https://www.training.nih.gov/data_science_summer">Data Science mentor</a> at the NIH,
+    and guest lectured at UMD.
+  </p>
+  <p style="width:60%;margin-left:auto;margin-right:auto;">
+    Outside of research, I direct the <a href="https://sites.google.com/view/nerds-in-harmony/">Nerds in Harmony</a>, a long-running <i>a cappella</i> group made up of NIH employees and fellows.
+    I'm also a Yoga Alliance RYT® 200 <a href="https://www.yogaalliance.org/TeacherPublicProfile?tid=254856">Registered Yoga Teacher</a>, and enjoy teaching for <a href="https://recwell.umd.edu/brian-o">UMD RecWell</a> on campus and online.
+  </p>
+  
+<div style="width:60%;margin-left:auto;margin-right:auto;text-align: center; margin-top: 15px">
+<br>
+<h2>Projects</h2>
+<p style="margin-bottom:0;">
+  {% include badge.html abbrev="ML" %}&nbsp;Machine Learning&nbsp;&nbsp;&bull;&nbsp;&nbsp;{% include badge.html abbrev="NLP" %}&nbsp;Natural Language Processing&nbsp;&nbsp;&bull;&nbsp;&nbsp;{% include badge.html abbrev="CB" %}&nbsp;Computational Biology&nbsp;&nbsp;&bull;&nbsp;&nbsp;{% include badge.html abbrev="IV" %}&nbsp;Information Visualization&nbsp;&nbsp;&bull;&nbsp;&nbsp;{% include badge.html abbrev="GIS" %}&nbsp;Geographic Information Systems
+</p>
+<p style="margin-bottom:0;">
+📄Paper&nbsp;&nbsp;&bull;&nbsp;&nbsp;📝Manuscript
+</p>
+</div>
   <div class="posts">
-    {% for post in site.portfolio %}
+    {% for post in site.portfolio reversed %}
     <div class="post-teaser">
       {% if post.thumbnail %} 
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-      <div class="post-img" style="background-image:url('{{ site.baseurl }}/{{ post.thumbnail }}')">
+      <div class="post-img" style="border-radius:10px;margin-right:10px;float:left;background-image:url('{{ site.baseurl }}/{{ post.thumbnail }}')">
       </div>
     </a>
       {% endif %}
       <span>
           <header>
-            <h1>
+            <h4>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                 {{ post.title }}
-            </h1>
-            <h3>
-                {{ post.subtitle }}
-            </h3>
+            </a>
+            </h4>
           </header>
+        
           <div class="excerpt">
+            {% for pub in post.pubs %}
+                {% if pub.pdf %}
+                    <div style="text-align:center;margin-right:10px;display:inline-block"><a href="assets/pub/{{ pub.pdf }}">
+                {% endif %}
+                        {%- if pub.doi -%}
+                            📄
+                        {%- else -%}
+                            📝
+                        {%- endif -%}
+                {%- if pub.pdf -%}
+                    <small>{{- pub.date | date: "%Y" -}}</small></a></div>
+                {%- endif -%}
+            {% endfor %}
             <!--{{ post.content | strip_html | truncate: "250" }}-->
             <!--<a class="button" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}
             </a>-->
           </div>
+          {% for badge in post.badges %}
+            {% include badge.html abbrev=badge %}
+          {% endfor %}
       </span>
     </div>
     {% endfor %}

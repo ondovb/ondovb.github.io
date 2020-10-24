@@ -3,6 +3,7 @@ baseurl: ""
 url: "https://ondovb.github.io"
 title: Brian Ondov # site's title
 description: "Portfolio" # used by search engines
+portrait: "assets/img/ondov.jpg"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:

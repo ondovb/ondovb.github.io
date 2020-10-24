@@ -3,7 +3,7 @@ layout: default
 ---
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header class='call-out' id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
+    <h3 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h3>
     <p class="meta">
     </p>
   </header>
@@ -15,7 +15,53 @@ layout: default
   {% if page.bootstrap %}
   </div>
   {% endif %}
+  
+  {% include rule.html %}
+  
+    {% for pub in page.pubs %}
+        <p>
+        {% if pub.doi %}
+            <h4>{{ pub.title }}</h4>
+            <div style="margin-left:20px;margin-top:0;">
+            <span style="color:gray">
+            {{ pub.journal }}</span>&nbsp;&bull;&nbsp;
+            <span style="color:gray">
+            {{ pub.date | date: "%B %e, %Y" }}</span>
+            <br>
+            {% assign authors = pub.authors | split: ", " %}
+            {% for author in authors %}
+                {% if author == "Brian Ondov" %}
+                    <strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if forloop.last == false %},
+                {% endif %}
+            {% endfor %}
+            <br>
+            {% if pub.pdf %}
+                <a href="/assets/pub/{{ pub.pdf }}">pdf</a>
+            {% endif %}
+            &nbsp;&bull;&nbsp;
+            {% if pub.doi %}
+                <a href={{ pub.doi }}>doi</a>
+            {% endif %}
+        {% else %}
+            <h4>Manuscript</h4>
+            <div style="margin-left:20px;margin-top:0;">
+            {% assign authors = pub.authors | split: ", " %}
+            {% for author in authors %}
+                {% if author == "Brian Ondov" %}
+                    <strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if forloop.last == false %},
+                {% endif %}
+            {% endfor %}
+            <br>
+            {% if pub.pdf %}
+                <a href={{ pub.pdf }}>pdf</a>
+            {% endif %}
+        {% endif %}
+        <br>
+        </div>
+        </p>
+    {% endfor %}
   </section>
+  <br>
   
 </article>
 

@@ -23,3 +23,35 @@
 @import 'includes/portfolio';
 @import 'includes/grid';
 @import 'includes/share_buttons';
+
+.badge
+{
+      border-radius: 8px;
+      padding: 0px 5px;
+      color: #FFFFFF;
+}
+
+.badge-NLP
+{
+      background: #FAF;
+}
+
+.badge-ML
+{
+      background: #FB0;
+}
+
+.badge-IV
+{
+      background: #97E;
+}
+
+.badge-CB
+{
+      background: #6CB;
+}
+
+.badge-GIS
+{
+      background: #F77;
+}
