@@ -6,7 +6,7 @@ layout: default
 
   <br><br><br>
   <div style="display: inline; margin: 0;">
-    <div style="background-image:url({{ site.portrait }}); " class="portrait" src=""></div>
+    <div style="background-image:url('/assets/img/ondov.jpg'); " class="portrait" src=""></div>
   </div>
 <p>
 <div style="text-align: center; margin-top: 15px;-webkit-user-select: none;
@@ -76,7 +76,7 @@ width:100%">
           <div class="excerpt">
             {% for pub in post.pubs %}
                 {% if pub.pdf %}
-                    <div style="text-align:center;margin-right:10px;display:inline-block"><a href="assets/pub/{{ pub.pdf }}">
+                    <div style="text-align:center;margin-right:10px;display:inline-block"><a href="/assets/pub/{{ pub.pdf }}">
                 {% endif %}
                         {%- if pub.doi -%}
                             📄
