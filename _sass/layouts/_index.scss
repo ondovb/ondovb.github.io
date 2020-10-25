@@ -1,4 +1,9 @@
 // Header text feature
+.call-out-home {
+    display: inline-block;
+    height: 0;
+}
+
 .call-out {
     @extend %padding-medium;
     display: inline-block;

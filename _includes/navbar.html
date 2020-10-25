@@ -6,6 +6,7 @@
     
     <!-- Toggle menu -->
     <nav class="clear">
+    <a id="pull" class="toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
 		<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
 <!--    <div style="width:300px;margin-left:auto;margin-right:auto"><div>ondovb<img src="assets/img/at.png" style="vertical-align:middle; height:16px"/>umd.edu</div>-->
 <!--<table style="overflow: hidden;position:absolute;margin-top:2px;border:0px;padding:0px;padding-bottom:0;width:165px;height:25px;margin-left:auto;margin-right:auto;"><tr style="border:0px;padding:0px;"><td style="border:0px;padding:0px;">ondovb</td><td style="border:0px;margin:0px;padding:0px" width="0"><img src="assets/img/at.png" style="vertical-align:middle; width:24px; height:20px"/></td><td style="padding:0px;border:0px">umd.edu</td></tr></table>-->
@@ -16,7 +17,7 @@
 user-select: none;">&nbsp;&nbsp;&bull;&nbsp;&nbsp;ondovb<img src="/assets/img/at.png" style="padding:0;width:18px;height:18px;vertical-align:middle;"/>umd.edu
 </span>
     <!-- Menu -->
-    <ul >
+    <ul class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
         {% assign name_page = "" %}
         
@@ -36,7 +37,7 @@ user-select: none;">&nbsp;&nbsp;&bull;&nbsp;&nbsp;ondovb<img src="/assets/img/at
         {% endfor %} 
         
 		<li>
-			<a href="https://www.cs.umd.edu/people/brianond">
+			<a class="clear" href="https://www.cs.umd.edu/people/brianond">
 				<i>UMD</i>
 			</a>
 		</li>
