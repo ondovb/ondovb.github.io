@@ -9,6 +9,7 @@ pubs:
     authors: Brian Ondov, Nicole Jardine, Niklas Elmqvist, Steven Franconeri
     doi: https://doi.org/10.1109/TVCG.2018.2864884
     journal: IEEE Trans Vis Comput Graph
+    journal-short: TVCG
     date: "2018-08-20"
     pdf: face2face.pdf
 -   title: "The Perceptual Proxies of Visual Comparison [Hon. Mention for Best Paper]"
@@ -16,12 +17,14 @@ pubs:
     doi: https://doi.org/10.1109/TVCG.2019.2934786
     date: "2019-08-20"
     journal: IEEE transactions on visualization and computer graphics
+    journal-short: TVCG
     pdf: proxies.pdf
 -   title: "Revealing Perceptual Proxies with Adversarial Examples"
     authors: Brian Ondov, Fumeng Yang, Matthew Kay, Niklas Elmqvist, Steven Franconeri
     doi: https://doi.org/10.1109/TVCG.2020.3030429
     date: "2020-11-01"
     journal: IEEE transactions on visualization and computer graphics
+    journal-short: TVCG
     pdf: adversarial.pdf
 badges:
 - ML
@@ -114,3 +117,7 @@ like the adversarial charts with high centroid proxies from the previous
 experiment: mixtures of very short and very long bars. Although more investigation
 of the results of both experiments is needed, they provide elegantly
 complementary evidence that the centroid proxy is at least on the right track.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B8Kum6RehbE?start=7641" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

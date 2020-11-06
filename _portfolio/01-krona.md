@@ -9,6 +9,7 @@ pubs:
     title: "Krona: Interactive metagenomic visualization in a Web browser"
     type: Paper
     journal: BMC Bioinformatics
+    journal-short: BMC Bioinfo
     doi: https://doi.org/10.1186/1471-2105-12-385
     authors: Brian Ondov, Nicholas Bergman, Adam Phillippy
     date: "2011-09-30"
