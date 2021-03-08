@@ -23,6 +23,7 @@ pubs:
     doi: https://doi.org/10.1186/s13059-019-1841-x
 badges:
 - CB
+- NLP
 ---
 
 Comparing a pair of genomes, say, to identify a new sample as a pathogen or not,
