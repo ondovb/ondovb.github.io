@@ -1,14 +1,14 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://ondovb.github.io"
-title: Brian Ondov # site's title
+title: Brian Ondov - Portfolio # site's title
 description: "Portfolio" # used by search engines
 portrait: "assets/img/ondov.jpg"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Brian Ondov # blog's title
+  title: Brian Ondov - Portfolio # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
