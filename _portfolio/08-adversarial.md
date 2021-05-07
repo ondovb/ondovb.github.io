@@ -51,7 +51,7 @@ If we could find such examples, they could show us what kinds of shortcuts we
 take when reading charts. In the field of Data Visualization, we call these
 shortcuts "perceptual proxies," and there is a lot of interest in figuring out
 which ones we use. Aside from learning more about what makes charts so
-powerful, this knowledge could also lead to chart designs that are more effect
+powerful, this knowledge could also lead to chart designs that are more effective
 and more robust to misleading edge cases.
 
 ### Creating adversarial examples ###
