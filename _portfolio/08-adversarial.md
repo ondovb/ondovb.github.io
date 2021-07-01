@@ -100,7 +100,7 @@ with the larger mean for each, and leaving them (hopefully) none the wiser to
 the misdirection.
 
 For the final, *exploitation* phase, we take a step towards the exploratory
-point if and only if was ranked higher, letting us ascend the hypothetical
+point if and only if it was ranked higher, letting us ascend the hypothetical
 gradient of our function (if the new point was not ranked higher, we can do
 nothing, although in our implementation, we actually take a small step in the
 opposite direction). The algorithm then repeats for a number of iterations or
